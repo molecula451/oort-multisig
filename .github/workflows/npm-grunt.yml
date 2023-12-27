@@ -24,5 +24,7 @@ jobs:
 
     - name: Build
       run: |
+        sudo apt-get update
+        sudo apt install -y libusb-1.0-0-dev
         npm install
         grunt
