@@ -30,4 +30,4 @@ jobs:
         npm install --force
         npm install -g grunt-cli
         npm install --save-dev grunt-cli
-        grunt
+        npx grunt
