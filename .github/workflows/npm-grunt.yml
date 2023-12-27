@@ -29,4 +29,5 @@ jobs:
         npm install node-gyp --force
         npm install --force
         npm install -g grunt-cli
+        npm install --save-dev grunt-cli
         grunt
