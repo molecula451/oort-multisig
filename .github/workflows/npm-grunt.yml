@@ -28,4 +28,4 @@ jobs:
         sudo apt install -y libusb-1.0-0-dev
         npm install node-gyp --force
         npm install --force
-        grunt
+        npx grunt
