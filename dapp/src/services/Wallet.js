@@ -1149,22 +1149,15 @@
       */
       wallet.confirmTransaction = function (address, txId, options, cb) {
         var instance = Web3Service.web3.eth.contract(wallet.json.multiSigDailyLimit.abi).at(address);
-        instance.confirmTransaction.estimateGas(txId, wallet.txDefaults(), function (e, gas){
-          if (e) {
-            cb(e);
-          }
-          else {
-            Web3Service.sendTransaction(
-              instance.confirmTransaction,
-              [
-                txId,
-                wallet.txDefaults({gas: Math.ceil(gas * 1.5)})
-              ],
-              options,
-              cb
-            );
-          }
-        });
+        Web3Service.sendTransaction(
+          instance.confirmTransaction,
+          [
+            txId,
+            wallet.txDefaults({gas: 300000})
+          ],
+          options,
+          cb
+        );
       };
 
       /**
