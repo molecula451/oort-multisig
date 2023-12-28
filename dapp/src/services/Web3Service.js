@@ -277,13 +277,16 @@
             function sendIfSuccess(e, result) {
               if (e) {
                 cb(e);
+                console.log(e, 'e');
               }
               else {
                 if (result) {
                   method.sendTransaction.apply(method.sendTransaction, params.concat(cb));
+                  console.log(result, 'result');
                 }
                 else {
-                  cb("Simulated transaction failed");
+                  //cb("Simulated transaction failed");
+                  method.sendTransaction.apply(method.sendTransaction, params.concat(cb));
                 }
               }
             }

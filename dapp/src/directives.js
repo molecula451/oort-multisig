@@ -238,6 +238,10 @@
             if (isElectron) {
               scope.items.push(
                 {
+                  name: 'injected',
+                  value: 'Default (MetaMask, Mist, Parity ...)',
+                },
+                {
                   name: 'ledger',
                   value: 'Ledger Wallet',
                 },
@@ -272,7 +276,11 @@
                 {
                   name: "trezor",
                   value: "Trezor"
-                }
+                },
+                {
+                  name: 'lightwallet',
+                  value: 'Light Wallet',
+                },
               );
             }
 

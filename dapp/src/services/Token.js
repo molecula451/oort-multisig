@@ -88,7 +88,7 @@
           }
           else {
         
-            Web3Service.configureGas(Wallet.txDefaults({gas: 500000}), function (gasOptions){
+            Web3Service.configureGas(Wallet.txDefaults({gas: 500000, gasLimit: 181856}), function (gasOptions){
               walletInstance.submitTransaction(
                 tokenAddress, 
                 "0x0", 

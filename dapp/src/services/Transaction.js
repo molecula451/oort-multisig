@@ -314,11 +314,12 @@
               if (e) {
                 reject();
               }
-              else if (block && block.hash == "0xd4e56740f876aef8c010b86a40d5f56745a118d0906a34e69aec8c0db1cb8fa3") {
-                data.chain = "mainnet";
-                data.etherscan = "https://etherscan.io";
-                data.walletFactoryAddress = txDefault.walletFactoryAddresses["mainnet"].address;
+              else if (block && block.hash == "0xe71d081e8dcee2649bc20e48e593066c13ff299d08adf0bcdf66771f620286f8") {
+                data.chain = "ccnbeta";
+                data.etherscan = "https://dev-scan.oortech.com/";
+                data.walletFactoryAddress = txDefault.walletFactoryAddresses["ccnbeta"].address;
               }
+              /*
               else if (block && block.hash == "0x41941023680923e0fe4d74a34bdac8141f2540e3ae90623718e47d66d1ca4a2d") {
                 data.chain = "ropsten";
                 data.etherscan = "https://ropsten.etherscan.io";
@@ -338,7 +339,7 @@
                 data.chain = "privatenet";
                 data.etherscan = "https://testnet.etherscan.io";
                 data.walletFactoryAddress = txDefault.walletFactoryAddresses["privatenet"].address;
-              }
+              }*/
 
               resolve(data);
             });

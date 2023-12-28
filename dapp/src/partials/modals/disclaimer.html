@@ -5,18 +5,9 @@
 </div>
 <div class="modal-body">
   <p>
-      For using the application, you have to agree with our <a href="#" ng-click="openTerms()">Terms of Use</a> and <a href="#" ng-click="openPolicy()">Privacy Policy</a>.
   </p>
   <p>
-    Don't use the wallet hosted at
-    <a href="{{ websites.wallet }}" class="prevent-focus" target="_blank">{{ websites.wallet }}</a> to sign transactions.
-    Use <a href="{{ websites.wallet }}" target="_blank">{{ websites.wallet }}</a> only to
-    check the status of your wallet. Use a locally installed version for signing.
-    A version can be obtained <a href="https://github.com/gnosis/MultiSigWallet/releases" target="_blank">here</a>.
-  </p>
-  <p>
-    All smart contracts have been audited carefully multiple times.
-    However, all contracts are <strong>WITHOUT ANY WARRANTY;</strong> without even
+    All contracts are <strong>WITHOUT ANY WARRANTY;</strong> without even
     the implied warranty of <strong>MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE</strong>.
   </p>
   <p>
@@ -25,13 +16,13 @@
   <div class="checkbox">
       <label>
         <input type="checkbox" ng-model="termsOfUse">
-        I have read and understood the Terms of Use
+        Understood
       </label>
   </div>
   <div class="checkbox">
       <label>
         <input type="checkbox" ng-model="privacyPolicy">
-        I have read and understood the Privacy Policy
+        Understood
       </label>
   </div>
   

@@ -69,7 +69,7 @@
         }
         else if ( log && log.match(/^[0-9]+$/) !== null) {
           if (isEther) {
-            return $filter('ether')(log);
+            return $filter('oort')(log);
           }
           else if(log.toString().length < 8){
             return log.toString().slice(0, 7);
@@ -90,15 +90,15 @@
           if (casted.gt(0)) {
             var ether = casted.div('1e18');
             if (ether.gt(1)) {
-              return ether.toPrecision(Math.floor(Math.log(ether.toNumber())/Math.log(10) + 3)).toString(10) + " ETH";
+              return ether.toPrecision(Math.floor(Math.log(ether.toNumber())/Math.log(10) + 3)).toString(10) + " OORT";
             }
             else {
-              return ether.toPrecision(2).toString() + " ETH";
+              return ether.toPrecision(2).toString() + " OORT";
             }
 
           }
           else {
-            return "0.00 ETH";
+            return "0.00 OORT";
           }
         }
         return null;

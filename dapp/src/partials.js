@@ -1255,7 +1255,7 @@ angular.module('multiSigWeb').run(['$templateCache', function($templateCache) {
     "<form class=\"form\" name=\"form\">\n" +
     "  <div class=\"modal-body\">\n" +
     "    <div class=\"form-group\">\n" +
-    "      <label for=\"value\">Amount (ETH):</label>\n" +
+    "      <label for=\"value\">Amount (CCN):</label>\n" +
     "      <input id=\"value\" type=\"number\" class=\"form-control\" ng-model=\"amount\" step=\"any\" min=\"0\" max=\"999999999999999\" required >\n" +
     "    </div>\n" +
     "  </div>\n" +
@@ -1310,18 +1310,9 @@ angular.module('multiSigWeb').run(['$templateCache', function($templateCache) {
     "</div>\n" +
     "<div class=\"modal-body\">\n" +
     "  <p>\n" +
-    "      For using the application, you have to agree with our <a href=\"#\" ng-click=\"openTerms()\">Terms of Use</a> and <a href=\"#\" ng-click=\"openPolicy()\">Privacy Policy</a>.\n" +
     "  </p>\n" +
     "  <p>\n" +
-    "    Don't use the wallet hosted at\n" +
-    "    <a href=\"{{ websites.wallet }}\" class=\"prevent-focus\" target=\"_blank\">{{ websites.wallet }}</a> to sign transactions.\n" +
-    "    Use <a href=\"{{ websites.wallet }}\" target=\"_blank\">{{ websites.wallet }}</a> only to\n" +
-    "    check the status of your wallet. Use a locally installed version for signing.\n" +
-    "    A version can be obtained <a href=\"https://github.com/gnosis/MultiSigWallet/releases\" target=\"_blank\">here</a>.\n" +
-    "  </p>\n" +
-    "  <p>\n" +
-    "    All smart contracts have been audited carefully multiple times.\n" +
-    "    However, all contracts are <strong>WITHOUT ANY WARRANTY;</strong> without even\n" +
+    "    All contracts are <strong>WITHOUT ANY WARRANTY;</strong> without even\n" +
     "    the implied warranty of <strong>MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE</strong>.\n" +
     "  </p>\n" +
     "  <p>\n" +
@@ -1330,13 +1321,13 @@ angular.module('multiSigWeb').run(['$templateCache', function($templateCache) {
     "  <div class=\"checkbox\">\n" +
     "      <label>\n" +
     "        <input type=\"checkbox\" ng-model=\"termsOfUse\">\n" +
-    "        I have read and understood the Terms of Use\n" +
+    "        Understood\n" +
     "      </label>\n" +
     "  </div>\n" +
     "  <div class=\"checkbox\">\n" +
     "      <label>\n" +
     "        <input type=\"checkbox\" ng-model=\"privacyPolicy\">\n" +
-    "        I have read and understood the Privacy Policy\n" +
+    "        Understood\n" +
     "      </label>\n" +
     "  </div>\n" +
     "  \n" +
@@ -2901,7 +2892,7 @@ angular.module('multiSigWeb').run(['$templateCache', function($templateCache) {
     "<form name=\"form\" class=\"form\">\n" +
     "  <div class=\"modal-body\">\n" +
     "    <div class=\"form-group\">\n" +
-    "      <label for=\"value\">Amount (ETH)</label>\n" +
+    "      <label for=\"value\">Amount (CCN)</label>\n" +
     "      <input id=\"value\" type=\"number\" class=\"form-control\" ng-model=\"tx.value\" ng-min=\"0\" max=\"999999999999999\" required>\n" +
     "    </div>\n" +
     "    <div class=\"form-group\">\n" +

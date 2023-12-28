@@ -42,7 +42,7 @@
 
       NotificationProvider.setOptions({
         delay: 3000,
-        horizontalSpacing: 60
+        horizontalSpacing: 75
       });
     });
   }

@@ -58,7 +58,7 @@
 
         $scope.showSafeMigrationModal = function () {
           $uibModal.open({
-            templateUrl: 'partials/modals/safeMigration.html',
+            templateUrl: '',//'partials/modals/safeMigration.html',
             size: 'lg',
             resolve: {
               wallet: walletCopy
@@ -178,7 +178,7 @@
               )
           );
 
-          // Get ETH Balance
+          // Get Main Balance
           batch.add(
             Wallet.getBalance(
               $scope.wallet.address,

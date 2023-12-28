@@ -332,7 +332,7 @@ function createWindow () {
 }
 
 // https://github.com/electron/electron/blob/master/docs/api/app.md#appsetnamename
-app.setName('Gnosis Multisig');
+app.setName('Oort Multisig (CCNBETA)');
 
 // This method will be called when Electron has finished
 // initialization and is ready to create browser windows.
