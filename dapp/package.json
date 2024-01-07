@@ -7,8 +7,8 @@
       "node": false
     }
   },
-  "homepage": "https://wallet.gnosis.pm",
-  "description": "Ethereum MultiSignature Wallet",
+  "homepage": "",
+  "description": "Oort MultiSignature Wallet",
   "main": "src/main.js",
   "scripts": {
     "build-linux": "build --linux",
@@ -25,27 +25,9 @@
     "test": "sh testrpc.sh"
   },
   "keywords": [
-    "ethereum",
+    "oort",
     "web3",
     "multisig"
-  ],
-  "author": {
-    "name": "Gnosis",
-    "email": "stefan@gnosis.pm"
-  },
-  "contributors": [
-    {
-      "name": "Denis Graña",
-      "email": "denis@gnosis.pm"
-    },
-    {
-      "name": "Stefan George",
-      "email": "stefan@gnosis.pm"
-    },
-    {
-      "name": "Giacomo Licari",
-      "email": "giacomo.licari@gnosis.pm"
-    }
   ],
   "license": "LGPL",
   "dependencies": {
