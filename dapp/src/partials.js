@@ -1852,7 +1852,7 @@ angular.module('multiSigWeb').run(['$templateCache', function($templateCache) {
     "      <input id=\"required\" type=\"number\" class=\"form-control\" ng-min=\"1\" ng-max=\"{{maxAllowedConfirmations}}\" ng-model=\"confirmations\" required />\n" +
     "    </div>\n" +
     "    <div class=\"form-group\">\n" +
-    "      <label for=\"daily-limit\"> Daily limit (ETH) </label>\n" +
+    "      <label for=\"daily-limit\"> Daily limit (OORT) </label>\n" +
     "      <input id=\"daily-limit\" type=\"number\" class=\"form-control\" ng-min=\"0\" max=\"999999999999999\" ng-model=\"limit\" required />\n" +
     "    </div>\n" +
     "    <div class=\"panel panel-default\">\n" +
