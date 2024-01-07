@@ -48,10 +48,6 @@ var txDefault = {
       url : "https://dev-rpc.oortech.com",
       name: "Oort(CCN)"
     },
-    {
-      url: "https://eth-sepolia.g.alchemy.com/v2/BM0-t-0ZSANZoT3riw1FZAMLfw_2M51B",
-      name: "Sepolia Debug",
-    }
   ],
   walletFactoryAddresses: {
     'mainnet': {
@@ -61,10 +57,6 @@ var txDefault = {
     'ccnbeta': {
       name: 'ccnbeta',
       address: txDefaultOrig.walletFactoryAddress
-    },
-    'sepolia': {
-      name: 'sepolia',
-      address: '0xf65481565cae6f6e143964f6615cd042a0397447'
     },
   }
 };
