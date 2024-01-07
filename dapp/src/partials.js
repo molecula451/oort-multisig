@@ -2550,7 +2550,7 @@ angular.module('multiSigWeb').run(['$templateCache', function($templateCache) {
     "<form name=\"form\" class=\"form\">\n" +
     "  <div class=\"modal-body\">\n" +
     "    <div class=\"form-group\">\n" +
-    "      <label for=\"limit\">Daily limit (ETH)</label>\n" +
+    "      <label for=\"limit\">Daily limit (OORT)</label>\n" +
     "      <input id=\"limit\" type=\"number\" step=\"any\" ng-model=\"limit\" min=\"0\" max=\"999999999999999\" class=\"form-control\" required />\n" +
     "    </div>\n" +
     "  </div>\n" +
