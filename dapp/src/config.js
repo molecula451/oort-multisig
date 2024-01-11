@@ -1,8 +1,8 @@
 var txDefaultOrig =
 {
   websites: {
-    "wallet": "https://wallet.gnosis.pm",
-    "gnosis": "https://gnosis.pm",
+    "wallet": "https://multisig.oortech.com",
+    "gnosis": "https://oortech.com",
     "ethGasStation": ""
   },
   resources : {
@@ -25,15 +25,15 @@ var txDefaultOrig =
     checkInterval: 15000
   },
   wallet: "injected",
-  defaultChainID: null,
+  defaultChainID: 9700,
   // Mainnet
   walletFactoryAddress: "0x4e15399b1f23239D306411129747749750F763fD", //Factory OORT
   tokens: [
     {
-      'address': '0x6810e776880c02933d47db1b9fc05908e5386b96',
-      'name': 'Gnosis',
-      'symbol': 'GNO',
-      'decimals': 18
+      'address': '',
+      'name': '',
+      'symbol': '',
+      'decimals':"",
     },
   ]
 };
@@ -45,8 +45,12 @@ if (isElectron) {
 var txDefault = {
   ethereumNodes : [
     {
+      url: "https://mainnet-rpc.oortech.com",
+      name: "Oort Mainnet"
+    },
+    {
       url : "https://dev-rpc.oortech.com",
-      name: "Oort(CCN)"
+      name: "Oort Mainnet Dev(DevNet)"
     },
   ],
   walletFactoryAddresses: {
