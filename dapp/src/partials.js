@@ -602,7 +602,7 @@ angular.module('multiSigWeb').run(['$templateCache', function($templateCache) {
     "    </tbody>\n" +
     "  </table>\n" +
     "  <div ng-show=\"!totalTokens\" class=\"panel-body text-center\" uib-collapse=\"hideTokens\">\n" +
-    "    No tokens. Add an ERC20 token <a href=\"\" ng-click=\"addToken()\">now</a>.\n" +
+    "    No tokens. Add an OORT token <a href=\"\" ng-click=\"addToken()\">now</a>.\n" +
     "  </div>\n" +
     "</div>\n" +
     "<!-- Multisig transactions panel -->\n" +
@@ -1301,86 +1301,6 @@ angular.module('multiSigWeb').run(['$templateCache', function($templateCache) {
     "</form>\n"
   );
 
-
-  $templateCache.put('src/partials/modals/disclaimer.html',
-    "<div class=\"modal-header\">\n" +
-    "  <div class=\"bootstrap-dialog-header\">\n" +
-    "    <div class=\"bootstrap-dialog-title\">Terms of Use and Privacy Policy</div>\n" +
-    "  </div>  \n" +
-    "</div>\n" +
-    "<div class=\"modal-body\">\n" +
-    "  <p>\n" +
-    "  </p>\n" +
-    "  <p>\n" +
-    "    All contracts are <strong>WITHOUT ANY WARRANTY;</strong> without even\n" +
-    "    the implied warranty of <strong>MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE</strong>.\n" +
-    "  </p>\n" +
-    "  <p>\n" +
-    "    Use at your own risk.\n" +
-    "  </p>\n" +
-    "  <div class=\"checkbox\">\n" +
-    "      <label>\n" +
-    "        <input type=\"checkbox\" ng-model=\"termsOfUse\">\n" +
-    "        Understood\n" +
-    "      </label>\n" +
-    "  </div>\n" +
-    "  <div class=\"checkbox\">\n" +
-    "      <label>\n" +
-    "        <input type=\"checkbox\" ng-model=\"privacyPolicy\">\n" +
-    "        Understood\n" +
-    "      </label>\n" +
-    "  </div>\n" +
-    "  \n" +
-    "\n" +
-    "</div>\n" +
-    "<div class=\"modal-footer\">\n" +
-    "  <button type=\"button\" ng-click=\"ok()\" class=\"btn btn-default\" id=\"terms-button\" ng-disabled=\"!termsOfUse || !privacyPolicy\">\n" +
-    "    Continue\n" +
-    "  </button>\n" +
-    "</div>\n"
-  );
-
-
-  $templateCache.put('src/partials/modals/disclaimerElectron.html',
-    "<div class=\"modal-header\">\n" +
-    "    <div class=\"bootstrap-dialog-header\">\n" +
-    "      <div class=\"bootstrap-dialog-title\">Terms of Use and Privacy Policy</div>\n" +
-    "    </div>  \n" +
-    "  </div>\n" +
-    "  <div class=\"modal-body\">\n" +
-    "    <p>\n" +
-    "        For using the application, you have to agree with our <a ng-click=\"openTerms()\">Terms of Use</a> and <a ng-click=\"openPolicy()\">Privacy Policy.</a>\n" +
-    "    </p>\n" +
-    "    <p>\n" +
-    "      All smart contracts have been audited carefully multiple times.\n" +
-    "      However, all contracts are <strong>WITHOUT ANY WARRANTY;</strong> without even\n" +
-    "      the implied warranty of <strong>MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE</strong>.\n" +
-    "    </p>\n" +
-    "    <p>\n" +
-    "      Use at your own risk.\n" +
-    "    </p>\n" +
-    "    <div class=\"checkbox\">\n" +
-    "        <label>\n" +
-    "          <input type=\"checkbox\" ng-model=\"termsOfUse\">\n" +
-    "          I have read and understood the Terms of Use\n" +
-    "        </label>\n" +
-    "    </div>\n" +
-    "    <div class=\"checkbox\">\n" +
-    "        <label>\n" +
-    "          <input type=\"checkbox\" ng-model=\"privacyPolicy\">\n" +
-    "          I have read and understood the Privacy Policy\n" +
-    "        </label>\n" +
-    "    </div>\n" +
-    "    \n" +
-    "  \n" +
-    "  </div>\n" +
-    "  <div class=\"modal-footer\">\n" +
-    "    <button type=\"button\" ng-click=\"ok()\" class=\"btn btn-default\" id=\"terms-button\" ng-disabled=\"!termsOfUse || !privacyPolicy\">\n" +
-    "      Continue\n" +
-    "    </button>\n" +
-    "  </div>\n" +
-    "  "
-  );
 
 
   $templateCache.put('src/partials/modals/editABI.html',
